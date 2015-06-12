@@ -1,5 +1,4 @@
 $(document).ready(function(){   
-
 	var user = new UserModel();
 	var App = Backbone.Router.extend({
 		routes: {
@@ -31,6 +30,12 @@ $(document).ready(function(){
 		$('.dropdown-toggle').html(UserModel.get('name'));
 	}
 
+	$('#editYo').on('click',function(e) {
+		console.log("asdfasdf");
+		$('#name').val(user.get('name'));
+		$('#role').val(user.get('role'));
+		$('#inputEmail3').val(user.get('email'));
+	});	
 	function fillUser(e){
 		e.preventDefault();
 		user.set({
