@@ -26,7 +26,7 @@ $(document).ready(function(){
 
 	function update(UserModel){
 		$('.profile-usertitle-name').html(UserModel.get('name'));
-		$('.profile-usertitle-job').html(UserModel.get('email'));
+		$('.profile-usertitle-job').html(UserModel.get('role'));
 		$('.dropdown-toggle').html(UserModel.get('name'));
 	}
 
